@@ -3,11 +3,14 @@
 ====================  
 [Open License](https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Global description: **An organization such as a school, NGO, corporation, club, etc, mapped from schema.org**  
+version: 0.0.2  
 
 ## List of properties  
 
-Required properties  
-- No required properties  ## Data Model description of properties  
+- `address`: The mailing address  - `aggregateRating`: The average rating based on multiple ratings or reviews. Privacy:'low'  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `author`: The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.  - `bestRating`: The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.   - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `legalName`: The official name of the organization, e.g. the registered company name.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `reviewAspect`: This Review or Rating is relevant to this part or facet of the itemReviewed  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `taxID`: The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.  - `url`: URL which provides a description or further information about this item.    
+Required properties  
+- `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -343,10 +346,173 @@ Organization:
 ## Example payloads    
 #### Organization NGSI-v2 key-values Example    
 Here is an example of a Organization in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": "2022-06-21T08:24:35.905712+02:00",  
+  "dateModified": "2022-06-22T09:24:35.905712+02:00",  
+  "name": "Example Organization",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      49.40,  
+      8.68  
+    ]  
+  },  
+  "address": {  
+    "addressLocality": "Heidelberg",  
+    "postalCode": "69115",  
+    "streetAddress": "Example-Street 42"  
+  },  
+  "areaServed": "Stadt Heidelberg",  
+  "url": "https://www.example-organization-homepage.com",  
+  "legalName": "Beispielname GmbH",  
+  "taxID": "12345678900"  
+}  
+```  
 #### Organization NGSI-v2 normalized Example    
 Here is an example of a Organization in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": {  
+    "type": "Date-Time",  
+    "value": "2022-06-21T08:24:35.905712+02:00"  
+  },  
+  "dateModified": {  
+    "type": "Date-Time",  
+    "value": "2022-06-22T09:24:35.905712+02:00"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "Example Organization"  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        49.40,  
+        8.68  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "PostalAddress",  
+    "value": {  
+      "addressLocality": "Heidelberg",  
+      "postalCode": "69115",  
+      "streetAddress": "Example-Street 42"  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Text",  
+    "value": "Stadt Heidelberg"  
+  },  
+  "url": {  
+    "type": "URI",  
+    "value": "https://www.example-organization-homepage.com"  
+  },  
+  "legalName": {  
+    "type": "Text",  
+    "value": "Beispielname GmbH"  
+  },  
+  "taxID": {  
+    "type": "Text",  
+    "value": "12345678900"  
+  },  
+  "@context": [  
+    "https://smart-data-models.github.io/DataModel.Organization/context.jsonld"  
+  ]  
+}  
+```  
 #### Organization NGSI-LD key-values Example    
 Here is an example of a Organization in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": "2022-06-21T08:24:35.905712+02:00",  
+  "dateModified": "2022-06-22T09:24:35.905712+02:00",  
+  "name": "Example Organization",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      49.40,  
+      8.68  
+    ]  
+  },  
+  "address": {  
+    "addressLocality": "Heidelberg",  
+    "postalCode": "69115",  
+    "streetAddress": "Example-Street 42"  
+  },  
+  "areaServed": "Stadt Heidelberg",  
+  "url": "https://www.example-organization-homepage.com",  
+  "legalName": "Beispielname GmbH",  
+  "taxID": "12345678900",  
+  "@context": [  
+    "https://smart-data-models.github.io/DataModel.Organization/context.jsonld"  
+  ]  
+}  
+```  
 #### Organization NGSI-LD normalized Example    
 Here is an example of a Organization in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": "2022-06-21T08:24:35.905712+02:00"  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": "2022-06-22T09:24:35.905712+02:00"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "Example Organization"  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        49.40,  
+        8.68  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressLocality": "Heidelberg",  
+      "postalCode": "69115",  
+      "streetAddress": "Example-Street 42"  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Stadt Heidelberg"  
+  },  
+  "url": {  
+    "type": "Property",  
+    "value": "https://www.example-organization-homepage.com"  
+  },  
+  "legalName": {  
+    "type": "Property",  
+    "value": "Beispielname GmbH"  
+  },  
+  "taxID": {  
+    "type": "Property",  
+    "value": "12345678900"  
+  },  
+  "@context": [  
+    "https://smart-data-models.github.io/DataModel.Organization/context.jsonld"  
+  ]  
+}  
+```  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
