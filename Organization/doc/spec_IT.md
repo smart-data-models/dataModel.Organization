@@ -74,7 +74,7 @@ Organization:
         model: https://schema.org/Text    
         type: Property    
     author:    
-      description: 'The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably. '    
+      description: 'The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.'    
       format: uri    
       type: string    
       x-ngsi:    
@@ -125,7 +125,7 @@ Organization:
       description: 'The official name of the organization, e.g. the registered company name.'    
       type: string    
       x-ngsi:    
-        model: ' https://schema.org/legalName'    
+        model: https://schema.org/legalName    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
@@ -320,7 +320,7 @@ Organization:
       description: 'The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.'    
       type: string    
       x-ngsi:    
-        model: ' https://schema.org/taxID'    
+        model: https://schema.org/taxID    
         type: Property    
     url:    
       description: 'URL which provides a description or further information about this item.'    
@@ -332,12 +332,12 @@ Organization:
     - id    
     - type    
   type: object    
-  x-derived-from: ""    
+  x-derived-from: https://schema.org/Organization    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Organization/blob/master/Organization/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/DataModel.Organization/Organization/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Esempi di payload  
