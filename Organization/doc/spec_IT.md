@@ -3,11 +3,14 @@
 ======================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Un'organizzazione come una scuola, una ONG, un'azienda, un club, ecc, mappata da schema.org**  
+versione: 0.0.2  
 
 ## Elenco delle proprietà  
 
-Proprietà richieste  
-- Nessuna proprietà richiesta  ## Modello di dati descrizione delle proprietà  
+- `address`: L'indirizzo postale  - `aggregateRating`: La valutazione media basata su più valutazioni o recensioni. Privacy:'basso'  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `author`: L'autore di questo contenuto o valutazione. Si noti che author è speciale in quanto HTML 5 fornisce un meccanismo speciale per indicare la paternità tramite il tag rel. È equivalente a questo e può essere usato in modo intercambiabile.  - `bestRating`: Il valore più alto consentito in questo sistema di valutazione. Se bestRating è omesso, si assume 5.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `legalName`: Il nome ufficiale dell'organizzazione, ad esempio la ragione sociale registrata.  - `location`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `reviewAspect`: Questa recensione o valutazione è pertinente a questa parte o aspetto dell'articoloRevisionato  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `taxID`: Il codice fiscale dell'organizzazione o della persona, ad esempio il TIN negli Stati Uniti o il CIF/NIF in Spagna.  - `url`: URL che fornisce una descrizione o ulteriori informazioni su questo elemento.    
+Proprietà richieste  
+- `id`  - `type`  ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -343,10 +346,173 @@ Organization:
 ## Esempi di payload  
 #### Organizzazione Valori chiave NGSI-v2 Esempio  
 Ecco un esempio di Organizzazione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": "2022-06-21T08:24:35.905712+02:00",  
+  "dateModified": "2022-06-22T09:24:35.905712+02:00",  
+  "name": "Example Organization",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      49.40,  
+      8.68  
+    ]  
+  },  
+  "address": {  
+    "addressLocality": "Heidelberg",  
+    "postalCode": "69115",  
+    "streetAddress": "Example-Street 42"  
+  },  
+  "areaServed": "Stadt Heidelberg",  
+  "url": "https://www.example-organization-homepage.com",  
+  "legalName": "Beispielname GmbH",  
+  "taxID": "12345678900"  
+}  
+```  
 #### Organizzazione NGSI-v2 normalizzata Esempio  
 Ecco un esempio di Organizzazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": {  
+    "type": "Date-Time",  
+    "value": "2022-06-21T08:24:35.905712+02:00"  
+  },  
+  "dateModified": {  
+    "type": "Date-Time",  
+    "value": "2022-06-22T09:24:35.905712+02:00"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "Example Organization"  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        49.40,  
+        8.68  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "PostalAddress",  
+    "value": {  
+      "addressLocality": "Heidelberg",  
+      "postalCode": "69115",  
+      "streetAddress": "Example-Street 42"  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Text",  
+    "value": "Stadt Heidelberg"  
+  },  
+  "url": {  
+    "type": "URI",  
+    "value": "https://www.example-organization-homepage.com"  
+  },  
+  "legalName": {  
+    "type": "Text",  
+    "value": "Beispielname GmbH"  
+  },  
+  "taxID": {  
+    "type": "Text",  
+    "value": "12345678900"  
+  },  
+  "@context": [  
+    "https://smart-data-models.github.io/DataModel.Organization/context.jsonld"  
+  ]  
+}  
+```  
 #### Organizzazione Valori chiave NGSI-LD Esempio  
 Ecco un esempio di Organizzazione in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": "2022-06-21T08:24:35.905712+02:00",  
+  "dateModified": "2022-06-22T09:24:35.905712+02:00",  
+  "name": "Example Organization",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      49.40,  
+      8.68  
+    ]  
+  },  
+  "address": {  
+    "addressLocality": "Heidelberg",  
+    "postalCode": "69115",  
+    "streetAddress": "Example-Street 42"  
+  },  
+  "areaServed": "Stadt Heidelberg",  
+  "url": "https://www.example-organization-homepage.com",  
+  "legalName": "Beispielname GmbH",  
+  "taxID": "12345678900",  
+  "@context": [  
+    "https://smart-data-models.github.io/DataModel.Organization/context.jsonld"  
+  ]  
+}  
+```  
 #### Organizzazione NGSI-LD normalizzata Esempio  
 Ecco un esempio di Organizzazione in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": "2022-06-21T08:24:35.905712+02:00"  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": "2022-06-22T09:24:35.905712+02:00"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "Example Organization"  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        49.40,  
+        8.68  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "addressLocality": "Heidelberg",  
+      "postalCode": "69115",  
+      "streetAddress": "Example-Street 42"  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Stadt Heidelberg"  
+  },  
+  "url": {  
+    "type": "Property",  
+    "value": "https://www.example-organization-homepage.com"  
+  },  
+  "legalName": {  
+    "type": "Property",  
+    "value": "Beispielname GmbH"  
+  },  
+  "taxID": {  
+    "type": "Property",  
+    "value": "12345678900"  
+  },  
+  "@context": [  
+    "https://smart-data-models.github.io/DataModel.Organization/context.jsonld"  
+  ]  
+}  
+```  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
