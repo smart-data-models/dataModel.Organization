@@ -1,4 +1,5 @@
-# Organization
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# Organization
 Version: 0.0.2
 
 ## Description 
