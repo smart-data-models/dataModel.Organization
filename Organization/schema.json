@@ -17,6 +17,13 @@
     },
     {
       "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Organization"
+          ],
+          "description": "Property. NGSI Entity type. It has to be Organization"
+        },
         "aggregateRating": {
           "type": "object",
           "description": "Property. The average rating based on multiple ratings or reviews. Privacy:'low'",
