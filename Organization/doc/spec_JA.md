@@ -4,11 +4,11 @@
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 グローバルな記述です。**学校、NGO、企業、クラブなどの組織で、schema.org からマップされたもの**。  
-バージョン: 0.0.2  
+バージョン: 0.0.3  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `aggregateRating`: 複数の評価やレビューに基づく平均的な評価です。プライバシー:'low'  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `author`: このコンテンツの作者、または評価。なお、authorはHTML5ではrelタグによって作者を示す特別な仕組みになっています。これはthisと同等であり、互換的に使用することができます。  - `bestRating`: このレーティングシステムで許容される最高値。bestRatingが省略された場合は、5とする。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `legalName`: 組織の正式名称（例：登録された会社名）。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `reviewAspect`: このレビューまたは評価は、アイテムのこの部分またはファセットに関連しているレビューされた。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `taxID`: 組織または個人の税務/財務ID（例：米国のTINまたはスペインのCIF/NIF）。  - `url`: この項目に関する説明や詳細情報を提供する URL。    
+- `address`: 郵送先住所  - `aggregateRating`: 複数の評価やレビューをもとにした平均的な評価です。プライバシー:'low'  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `author`: このコンテンツの作者、または評価。なお、authorはHTML5ではrelタグによって作者を示す特別な仕組みになっています。これはthisと同等であり、互換的に使用することができます。  - `bestRating`: このレーティングシステムで許容される最高値。bestRatingが省略された場合は、5とする。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `legalName`: 組織の正式名称（例：登録された会社名）。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `reviewAspect`: このレビューまたは評価は、アイテムのこの部分またはファセットに関連しているレビューされた。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `taxID`: 組織または個人の税務/財務ID（例：米国のTINまたはスペインのCIF/NIF）。  - `type`: NGSIエンティティタイプ。これは組織でなければなりません。  - `url`: この項目に関する説明や詳細情報を提供する URL。    
 必要なプロパティ  
 - `id`  - `type`  ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
@@ -325,6 +325,13 @@ Organization:
       x-ngsi:    
         model: https://schema.org/taxID    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be Organization'    
+      enum:    
+        - Organization    
+      type: string    
+      x-ngsi:    
+        type: Property    
     url:    
       description: 'URL which provides a description or further information about this item.'    
       format: uri    
@@ -336,11 +343,11 @@ Organization:
     - type    
   type: object    
   x-derived-from: https://schema.org/Organization    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Organization/blob/master/Organization/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/DataModel.Organization/Organization/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 ## ペイロードの例  
