@@ -4,11 +4,11 @@
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Una organización como una escuela, una ONG, una corporación, un club, etc., mapeada desde schema.org**  
-versión: 0.0.2  
+versión: 0.0.3  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `aggregateRating`: La valoración media basada en múltiples valoraciones o reseñas. Privacidad:'baja'  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `author`: El autor de este contenido o calificación. Tenga en cuenta que el autor es especial porque HTML 5 proporciona un mecanismo especial para indicar la autoría a través de la etiqueta rel. Esto es equivalente a esto y puede ser utilizado indistintamente.  - `bestRating`: El valor más alto permitido en este sistema de clasificación. Si se omite bestRating, se asume 5.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `legalName`: El nombre oficial de la organización, por ejemplo, la razón social registrada.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `reviewAspect`: Esta opinión o valoración es relevante para esta parte o faceta del artículoRevisado  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `taxID`: El número de identificación fiscal de la organización o persona, por ejemplo, el TIN en Estados Unidos o el CIF/NIF en España.  - `url`: URL que proporciona una descripción o más información sobre este artículo.    
+- `address`: La dirección postal  - `aggregateRating`: La valoración media basada en múltiples valoraciones o reseñas. Privacidad:'baja'  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `author`: El autor de este contenido o calificación. Tenga en cuenta que el autor es especial porque HTML 5 proporciona un mecanismo especial para indicar la autoría a través de la etiqueta rel. Esto es equivalente a esto y puede ser utilizado indistintamente.  - `bestRating`: El valor más alto permitido en este sistema de clasificación. Si se omite bestRating, se asume 5.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `legalName`: El nombre oficial de la organización, por ejemplo, la razón social registrada.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `reviewAspect`: Esta opinión o valoración es relevante para esta parte o faceta del artículoRevisado  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `taxID`: El número de identificación fiscal de la organización o persona, por ejemplo, el TIN en Estados Unidos o el CIF/NIF en España.  - `type`: Tipo de entidad NGSI. Tiene que ser Organización  - `url`: URL que proporciona una descripción o más información sobre este artículo.    
 Propiedades requeridas  
 - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -325,6 +325,13 @@ Organization:
       x-ngsi:    
         model: https://schema.org/taxID    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be Organization'    
+      enum:    
+        - Organization    
+      type: string    
+      x-ngsi:    
+        type: Property    
     url:    
       description: 'URL which provides a description or further information about this item.'    
       format: uri    
@@ -336,11 +343,11 @@ Organization:
     - type    
   type: object    
   x-derived-from: https://schema.org/Organization    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Organization/blob/master/Organization/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/DataModel.Organization/Organization/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 ## Ejemplo de carga útil  
