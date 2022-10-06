@@ -20,6 +20,7 @@
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "source": "https://smartdatamodels.org/source",
         "taxID": "https://smartdatamodels.org/dataModel.Organization/taxID",
+        "type": "@type",
         "url": "https://smartdatamodels.org/dataModel.Organization/url"
     }
 }
