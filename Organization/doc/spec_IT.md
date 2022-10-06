@@ -4,11 +4,11 @@
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descrizione globale: **Un'organizzazione come una scuola, una ONG, un'azienda, un club, ecc, mappata da schema.org**  
-versione: 0.0.2  
+versione: 0.0.3  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `aggregateRating`: La valutazione media basata su più valutazioni o recensioni. Privacy:'basso'  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `author`: L'autore di questo contenuto o valutazione. Si noti che author è speciale in quanto HTML 5 fornisce un meccanismo speciale per indicare la paternità tramite il tag rel. È equivalente a questo e può essere usato in modo intercambiabile.  - `bestRating`: Il valore più alto consentito da questo sistema di valutazione. Se bestRating viene omesso, si assume 5.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `legalName`: Il nome ufficiale dell'organizzazione, ad esempio la ragione sociale registrata.  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `reviewAspect`: Questa recensione o valutazione è rilevante per questa parte o aspetto dell'articoloRevisionato  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `taxID`: Il codice fiscale dell'organizzazione o della persona, ad esempio il TIN negli Stati Uniti o il CIF/NIF in Spagna.  - `url`: URL che fornisce una descrizione o ulteriori informazioni su questo elemento.    
+- `address`: L'indirizzo postale  - `aggregateRating`: La valutazione media basata su più valutazioni o recensioni. Privacy:'basso'  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `author`: L'autore di questo contenuto o valutazione. Si noti che author è speciale in quanto HTML 5 fornisce un meccanismo speciale per indicare la paternità tramite il tag rel. È equivalente a questo e può essere usato in modo intercambiabile.  - `bestRating`: Il valore più alto consentito da questo sistema di valutazione. Se bestRating viene omesso, si assume 5.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `legalName`: Il nome ufficiale dell'organizzazione, ad esempio la ragione sociale registrata.  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `reviewAspect`: Questa recensione o valutazione è pertinente a questa parte o aspetto dell'articoloRevisionato  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `taxID`: Il codice fiscale dell'organizzazione o della persona, ad esempio il TIN negli Stati Uniti o il CIF/NIF in Spagna.  - `type`: Tipo di entità NGSI. Deve essere Organizzazione  - `url`: URL che fornisce una descrizione o ulteriori informazioni su questo elemento.    
 Proprietà richieste  
 - `id`  - `type`  ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
@@ -325,6 +325,13 @@ Organization:
       x-ngsi:    
         model: https://schema.org/taxID    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be Organization'    
+      enum:    
+        - Organization    
+      type: string    
+      x-ngsi:    
+        type: Property    
     url:    
       description: 'URL which provides a description or further information about this item.'    
       format: uri    
@@ -336,11 +343,11 @@ Organization:
     - type    
   type: object    
   x-derived-from: https://schema.org/Organization    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Organization/blob/master/Organization/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/DataModel.Organization/Organization/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 ## Esempi di payload  
