@@ -4,11 +4,11 @@
 [Open License](https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **An organization such as a school, NGO, corporation, club, etc, mapped from schema.org**  
-version: 0.0.2  
+version: 0.0.3  
 
 ## List of properties  
 
-- `address`: The mailing address  - `aggregateRating`: The average rating based on multiple ratings or reviews. Privacy:'low'  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `author`: The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.  - `bestRating`: The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.   - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `legalName`: The official name of the organization, e.g. the registered company name.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `reviewAspect`: This Review or Rating is relevant to this part or facet of the itemReviewed  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `taxID`: The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.  - `url`: URL which provides a description or further information about this item.    
+- `address`: The mailing address  - `aggregateRating`: The average rating based on multiple ratings or reviews. Privacy:'low'  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `author`: The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.  - `bestRating`: The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.   - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `legalName`: The official name of the organization, e.g. the registered company name.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `reviewAspect`: This Review or Rating is relevant to this part or facet of the itemReviewed  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `taxID`: The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.  - `type`: NGSI entity type. It has to be Organization  - `url`: URL which provides a description or further information about this item.    
 Required properties  
 - `id`  - `type`  ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -325,6 +325,13 @@ Organization:
       x-ngsi:    
         model: https://schema.org/taxID    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be Organization'    
+      enum:    
+        - Organization    
+      type: string    
+      x-ngsi:    
+        type: Property    
     url:    
       description: 'URL which provides a description or further information about this item.'    
       format: uri    
@@ -336,11 +343,11 @@ Organization:
     - type    
   type: object    
   x-derived-from: https://schema.org/Organization    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Organization/blob/master/Organization/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/DataModel.Organization/Organization/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.0.3    
 ```  
 </details>    
 ## Example payloads    
