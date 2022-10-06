@@ -309,6 +309,13 @@ Organization:
       x-ngsi:
         model: https://schema.org/taxID
         type: Property
+    type:
+      description: 'NGSI entity type. It has to be Organization'
+      enum:
+        - Organization
+      type: string
+      x-ngsi:
+        type: Property
     url:
       description: 'URL which provides a description or further information about this item.'
       format: uri
@@ -320,8 +327,8 @@ Organization:
     - type
   type: object
   x-derived-from: https://schema.org/Organization
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Organization/blob/master/Organization/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/DataModel.Organization/Organization/schema.json
   x-model-tags: ""
-  x-version: 0.0.2
+  x-version: 0.0.3
