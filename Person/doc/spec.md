@@ -7,16 +7,18 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Global description: **A person (alive, dead, undead, or fictional) mapped from schema.org**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->  
+- `additionalName[string]`: An additional name for a Person, can be used for a middle name  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `email[string]`: Email address of owner  - `familyName[string]`: Family name. In the U.S., the last name of a Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `givenName[string]`: Given name. In the U.S., the first name of a Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `telephone[string]`: The telephone number  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Property. It must be equal to Person. NGSI type  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
-- No required properties  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -345,13 +347,305 @@ Person:
 ## Example payloads    
 #### Person NGSI-v2 key-values Example    
 Here is an example of a Person in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",  
+  "type": "Person",  
+  "dateCreated": "2022-05-07T06:43:37Z",  
+  "dateModified": "2022-12-27T04:25:34Z",  
+  "source": "",  
+  "name": "CEO",  
+  "alternateName": "",  
+  "description": "",  
+  "dataProvider": "",  
+  "owner": [  
+    "urn:ngsi-ld:dataModel:items:WQPT:65442393",  
+    "urn:ngsi-ld:dataModel:items:ALHV:33053523"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:dataModel:items:LHMU:67329694",  
+    "urn:ngsi-ld:dataModel:items:MMZQ:64123812"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      40.2403775,  
+      170.070362  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "Franklinstrasse 13A",  
+    "addressLocality": "Berlin",  
+    "addressRegion": "Berlin",  
+    "addressCountry": "Germany",  
+    "postalCode": "10587",  
+    "postOfficeBoxNumber": ""  
+  },  
+  "areaServed": "Worldwide",  
+  "additionalName": "",  
+  "familyName": "Ahle",  
+  "givenName": "Ulrich",  
+  "telephone": "+491741533348",  
+  "email": "info@fiware.org"  
+}  
+```  
+</details>  
 #### Person NGSI-v2 normalized Example    
 Here is an example of a Person in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",  
+  "type": "Person",  
+  "dateCreated": {  
+    "type": "Date-Time",  
+    "value": "2022-05-07T06:43:37Z"  
+  },  
+  "dateModified": {  
+    "type": "Date-Time",  
+    "value": "2022-12-27T04:25:34Z"  
+  },  
+  "source": {  
+    "type": "Text",  
+    "value": ""  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "CEO"  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": ""  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": ""  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "Web"  
+  },  
+  "owner": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:dataModel:items:WQPT:65442393",  
+      "urn:ngsi-ld:dataModel:items:ALHV:33053523"  
+    ]  
+  },  
+  "seeAlso": {  
+    "type": "array",  
+    "value": [  
+      "urn:ngsi-ld:dataModel:items:LHMU:67329694",  
+      "urn:ngsi-ld:dataModel:items:MMZQ:64123812"  
+    ]  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        52.52,  
+        13.4050  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "PostalAddress",  
+    "value": {  
+      "streetAddress": "Franklinstrasse 13A",  
+      "addressLocality": "Berlin",  
+      "addressRegion": "Berlin",  
+      "addressCountry": "Germany",  
+      "postalCode": "10587",  
+      "postOfficeBoxNumber": ""  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Text",  
+    "value": "Worldwide"  
+  },  
+  "additionalName": {  
+    "type": "Text",  
+    "value": ""  
+  },  
+  "familyName": {  
+    "type": "Text",  
+    "value": "Ahle"  
+  },  
+  "givenName": {  
+    "type": "Text",  
+    "value": "Ulrich"  
+  },  
+  "telephone": {  
+    "type": "Text",  
+    "value": "+491741533348"  
+  },  
+  "email": {  
+    "type": "Text",  
+    "value": "info@fiware.org"  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/dataModel.Organization/context.jsonld"  
+  ]  
+}  
+```  
+</details>  
 #### Person NGSI-LD key-values Example    
 Here is an example of a Person in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",  
+  "type": "Person",  
+  "dateCreated": "2022-05-07T06:43:37Z",  
+  "dateModified": "2022-12-27T04:25:34Z",  
+  "source": "",  
+  "name": "CEO",  
+  "alternateName": "",  
+  "description": "",  
+  "dataProvider": "",  
+  "owner": [  
+    "urn:ngsi-ld:dataModel:items:WQPT:65442393",  
+    "urn:ngsi-ld:dataModel:items:ALHV:33053523"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:dataModel:items:LHMU:67329694",  
+    "urn:ngsi-ld:dataModel:items:MMZQ:64123812"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      40.2403775,  
+      170.070362  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "Franklinstrasse 13A",  
+    "addressLocality": "Berlin",  
+    "addressRegion": "Berlin",  
+    "addressCountry": "Germany",  
+    "postalCode": "10587",  
+    "postOfficeBoxNumber": ""  
+  },  
+  "areaServed": "Worldwide",  
+  "additionalName": "",  
+  "familyName": "Ahle",  
+  "givenName": "Ulrich",  
+  "telephone": "+491741533348",  
+  "email": "info@fiware.org",  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Organization/master/context.jsonld"  
+  ]  
+}  
+```  
+</details>  
 #### Person NGSI-LD normalized Example    
 Here is an example of a Person in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",  
+  "type": "Person",  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "date-time",  
+      "@value": "2022-05-07T06:43:37Z"  
+    }  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "date-time",  
+      "@value": "2022-12-27T04:25:34Z"  
+    }  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "CEO"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "Web"  
+  },  
+  "owner": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:dataModel:items:WQPT:65442393",  
+      "urn:ngsi-ld:dataModel:items:ALHV:33053523"  
+    ]  
+  },  
+  "seeAlso": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:dataModel:items:LHMU:67329694",  
+      "urn:ngsi-ld:dataModel:items:MMZQ:64123812"  
+    ]  
+  },  
+  "location": {  
+    "type": "Geoproperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        52.52,  
+        13.4050  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "streetAddress": "Franklinstrasse 13A",  
+      "addressLocality": "Berlin",  
+      "addressRegion": "Berlin",  
+      "addressCountry": "Germany",  
+      "postalCode": "10587",  
+      "postOfficeBoxNumber": ""  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Worldwide"  
+  },  
+  "additionalName": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "familyName": {  
+    "type": "Property",  
+    "value": "Ahle"  
+  },  
+  "givenName": {  
+    "type": "Property",  
+    "value": "Ulrich"  
+  },  
+  "telephone": {  
+    "type": "Property",  
+    "value": "+491741533348"  
+  },  
+  "email": {  
+    "type": "Property",  
+    "value": "info@fiware.org"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Organization/master/context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
