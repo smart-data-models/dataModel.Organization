@@ -6,7 +6,7 @@
   "description": "A person (alive, dead, undead, or fictional) mapped from schema.org",
   "modelTags": "",
   "derivedFrom": "https://schema.org/Person",
-  "license": "https://smart-data-models.github.io/dataModel.Energy/ThreePhaseAcMeasurement/LICENSE.md",
+  "license": ",
   "type": "object",
   "allOf": [
     {
