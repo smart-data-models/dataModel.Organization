@@ -1,6 +1,8 @@
 {
     "@context": {
         "Organization": "https://smartdatamodels.org/dataModel.Organization/Organization",
+        "Person": "https://smartdatamodels.org/dataModel.Organization/Person",
+        "additionalName": "https://smartdatamodels.org/dataModel.Organization/additionalName",
         "address": "https://smartdatamodels.org/address",
         "aggregateRating": "https://smartdatamodels.org/dataModel.Organization/aggregateRating",
         "alternateName": "https://smartdatamodels.org/alternateName",
@@ -11,6 +13,9 @@
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
         "description": "http://purl.org/dc/terms/description",
+        "email": "https://smartdatamodels.org/email",
+        "familyName": "https://smartdatamodels.org/dataModel.Organization/familyName",
+        "givenName": "https://smartdatamodels.org/dataModel.Organization/givenName",
         "id": "@id",
         "legalName": "https://smartdatamodels.org/dataModel.Organization/legalName",
         "location": "ngsi-ld:location",
@@ -21,6 +26,7 @@
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "source": "https://smartdatamodels.org/source",
         "taxID": "https://smartdatamodels.org/dataModel.Organization/taxID",
+        "telephone": "https://smartdatamodels.org/dataModel.Organization/telephone",
         "type": "@type",
         "url": "https://smartdatamodels.org/dataModel.Organization/url"
     }
