@@ -1,29 +1,29 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : Organisation  
-=====================<!-- /10-Header -->  
+实体。组织  
+=====<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Description globale : **Une organisation telle qu'une école, une ONG, une société, un club, etc., mappée à partir de schema.org**.  
-version : 0.0.3  
+全局描述。**一个组织，如学校、非政府组织、公司、俱乐部等，映射自schema.org**。  
+版本：0.0.3  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## Liste des propriétés  
+##属性列表  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `aggregateRating[object]`: La note moyenne basée sur plusieurs notes ou avis. Confidentialité : 'low' (faible)  - `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `author[string]`: L'auteur de ce contenu ou de ce classement. Veuillez noter que l'auteur est spécial dans la mesure où HTML 5 fournit un mécanisme spécial pour indiquer l'auteur via la balise rel. Cela est équivalent à ceci et peut être utilisé de manière interchangeable.  . Model: [https://schema.org/URL](https://schema.org/URL)- `bestRating[number]`: La valeur la plus élevée autorisée dans ce système d'évaluation. Si bestRating est omis, 5 est supposé.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `legalName[string]`: Le nom officiel de l'organisation, par exemple le nom de la société enregistrée.  . Model: [https://schema.org/legalName](https://schema.org/legalName)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `reviewAspect[string]`: Cet avis ou cette évaluation concerne cette partie ou cette facette de l'articleAvisagé  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `taxID[string]`: L'identifiant fiscal de l'organisation ou de la personne, par exemple le TIN aux États-Unis ou le CIF/NIF en Espagne.  . Model: [https://schema.org/taxID](https://schema.org/taxID)- `type[string]`: Type d'entité NGSI. Il doit s'agir d'une organisation  - `url[string]`: URL qui fournit une description ou des informations supplémentaires sur cet élément.  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `aggregateRating[object]`: 基于多个评级或评论的平均评级。隐私:'低'  - `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `author[string]`: 此内容的作者或评级。请注意，作者是特殊的，因为HTML 5提供了一个特殊的机制，通过rel标签来表示作者身份。这与此相当，可以互换使用。  . Model: [https://schema.org/URL](https://schema.org/URL)- `bestRating[number]`: 这个评级系统中允许的最高值。如果省略bestRating，则假定为5。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `id[*]`: 实体的唯一标识符  - `legalName[string]`: 组织的正式名称，如注册公司名称。  . Model: [https://schema.org/legalName](https://schema.org/legalName)- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `reviewAspect[string]`: 该评论或评价与项目的这个部分或方面有关。  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `taxID[string]`: 组织或个人的税务/财政ID，例如，美国的TIN或西班牙的CIF/NIF。  . Model: [https://schema.org/taxID](https://schema.org/taxID)- `type[string]`: NGSI实体类型。它必须是组织  - `url[string]`: 提供关于这个项目的描述或进一步信息的URL。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Propriétés requises  
+所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Description des propriétés du modèle de données  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -368,9 +368,9 @@ Organization:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Exemples de charges utiles  
-#### Organisation Valeurs-clés NGSI-v2 Exemple  
-Voici un exemple d'organisation au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+## ＃＃＃＃有效载荷的例子  
+#### 组织NGSI-v2关键值示例  
+这里有一个JSON-LD格式的组织作为关键值的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -398,8 +398,8 @@ Organization:
 }  
 ```  
 </details>  
-#### Organisation NGSI-v2 normalisée Exemple  
-Voici un exemple d'organisation au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### 组织NGSI-v2规范化示例  
+下面是一个以JSON-LD格式规范化的组织的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -457,8 +457,8 @@ Organization:
 }  
 ```  
 </details>  
-#### Organisation Valeurs-clés NGSI-LD Exemple  
-Voici un exemple d'organisation au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### 组织NGSI-LD关键值示例  
+这里有一个JSON-LD格式的组织作为key-values的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -490,8 +490,8 @@ Organization:
 }  
 ```  
 </details>  
-#### Organisation NGSI-LD normalisée Exemple  
-Voici un exemple d'organisation au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### 组织NGSI-LD规范化示例  
+这里有一个JSON-LD格式的组织的例子，是规范化的。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -553,7 +553,7 @@ Organization:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

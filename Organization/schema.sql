@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Organization of the subject dataModel.Organization for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Organization_type AS ENUM ('Organization');
+CREATE TABLE Organization (address json, aggregateRating json, alternateName text, areaServed text, author text, bestRating text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, legalName text, location json, name text, owner json, reviewAspect text, seeAlso json, source text, taxID text, type Organization_type, url text);

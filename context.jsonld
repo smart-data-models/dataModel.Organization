@@ -1,5 +1,6 @@
 {
     "@context": {
+        "Organization": "https://smartdatamodels.org/dataModel.Organization/Organization",
         "address": "https://smartdatamodels.org/address",
         "aggregateRating": "https://smartdatamodels.org/dataModel.Organization/aggregateRating",
         "alternateName": "https://smartdatamodels.org/alternateName",
