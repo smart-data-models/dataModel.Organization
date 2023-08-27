@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Person of the subject dataModel.Organization for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Person_type AS ENUM ('Person');
+CREATE TABLE Person (additionalName text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, email text, familyName text, givenName text, id text, location json, name text, owner json, seeAlso json, source text, telephone text, type Person_type);
