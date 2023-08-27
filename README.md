@@ -5,6 +5,8 @@
 The following entity types are available:
 - [Organization](https://github.com/smart-data-models/dataModel.Organization/blob/master/Organization/README.md). An organization such as a school, NGO, corporation, club, etc, mapped from schema.org
 
+- [Person](https://github.com/smart-data-models/dataModel.Organization/blob/master/Person/README.md). A person (alive, dead, undead, or fictional) mapped from schema.org
+
 
 
 ### Contributors
