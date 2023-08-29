@@ -6,7 +6,7 @@
   "description": "A person (alive, dead, undead, or fictional) mapped from schema.org",
   "modelTags": "",
   "derivedFrom": "https://schema.org/Person",
-  "license": ",
+  "license": "",
   "type": "object",
   "allOf": [
     {
