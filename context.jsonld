@@ -11,7 +11,15 @@
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "author": "https://smartdatamodels.org/dataModel.Organization/author",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "bestRating": "https://smartdatamodels.org/dataModel.Organization/bestRating",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
