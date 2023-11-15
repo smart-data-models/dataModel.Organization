@@ -2,11 +2,11 @@
   "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",
   "type": "Person",
   "dateCreated": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2022-05-07T06:43:37Z"
   },
   "dateModified": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2022-12-27T04:25:34Z"
   },
   "source": {
@@ -30,14 +30,14 @@
     "value": "Web"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:dataModel:items:WQPT:65442393",
       "urn:ngsi-ld:dataModel:items:ALHV:33053523"
     ]
   },
   "seeAlso": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:dataModel:items:LHMU:67329694",
       "urn:ngsi-ld:dataModel:items:MMZQ:64123812"
@@ -49,12 +49,12 @@
       "type": "Point",
       "coordinates": [
         52.52,
-        13.4050
+        13.405
       ]
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "Franklinstrasse 13A",
       "addressLocality": "Berlin",
@@ -87,8 +87,5 @@
   "email": {
     "type": "Text",
     "value": "info@fiware.org"
-  },
-  "@context": [
-    "https://smartdatamodels.org/dataModel.Organization/context.jsonld"
-  ]
+  }
 }
