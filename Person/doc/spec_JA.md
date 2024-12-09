@@ -1,34 +1,34 @@
 <!-- 10-Header -->    
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
-Entity: Person    
-==============<!-- /10-Header -->    
+エンティティ個人    
+========<!-- /10-Header -->    
 <!-- 15-License -->    
-[Open License](https://github.com/smart-data-models//dataModel.Organization/blob/master/Person/LICENSE.md)    
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.Organization/blob/master/Person/LICENSE.md)    
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
 <!-- /15-License -->    
 <!-- 20-Description -->    
-Global description: **A person (alive, dead, undead, or fictional) mapped from schema.org**    
-version: 0.0.1    
+グローバルな記述：**schema.orgからマップされた人物（生きている、死んでいる、死んでいない、または架空の）***。    
+バージョン: 0.0.1    
 <!-- /20-Description -->    
 <!-- 30-PropertiesList -->    
-## List of properties    
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>    
-- `additionalName[string]`: An additional name for a Person, can be used for a middle name  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government      
-	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
-	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
-	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `email[idn-email]`: Email address of owner  - `familyName[string]`: Family name. In the U.S., the last name of a Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `givenName[string]`: Given name. In the U.S., the first name of a Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `telephone[string]`: The telephone number  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: It must be equal to Person. NGSI type  <!-- /30-PropertiesList -->    
+## プロパティのリスト    
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。    
+- `additionalName[string]`: ミドルネームとして使用可能。  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。      
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `email[idn-email]`: 所有者のEメールアドレス  - `familyName[string]`: 姓。米国では、姓は「人」である。  . Model: [https://schema.org/Text](https://schema.org/Text)- `givenName[string]`: ジブンネーム。米国では、人物のファーストネームは以下の通り。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `telephone[string]`: 電話番号  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Person と等しくなければならない。NGSIタイプ  <!-- /30-PropertiesList -->    
 <!-- 35-RequiredProperties -->    
-Required properties    
+必須プロパティ    
 - `id`  - `type`  <!-- /35-RequiredProperties -->    
 <!-- 40-RequiredProperties -->    
 <!-- /40-RequiredProperties -->    
 <!-- 50-DataModelHeader -->    
-## Data Model description of properties    
-Sorted alphabetically (click for details)    
+## プロパティのデータモデル記述    
+アルファベット順（クリックで詳細表示）    
 <!-- /50-DataModelHeader -->    
 <!-- 60-ModelYaml -->    
 <details><summary><strong>full yaml details</strong></summary>      
@@ -401,9 +401,9 @@ Person:
 <!-- 70-MiddleNotes -->    
 <!-- /70-MiddleNotes -->    
 <!-- 80-Examples -->    
-## Example payloads      
-#### Person NGSI-v2 key-values Example      
-Here is an example of a Person in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.    
+## ペイロードの例    
+#### 個人 NGSI-v2 キー値の例    
+以下はPersonをJSON-LD形式でkey-valuesとして表した例である。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると個々のエンティティのコンテキストデータを返す。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -448,8 +448,8 @@ Person:
 }  
 ```  
 </details>    
-#### Person NGSI-v2 normalized Example      
-Here is an example of a Person in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.    
+#### 人物 NGSI-v2 正規化例    
+以下は、正規化された JSON-LD 形式の Person の例である。これは、オプションを使用しない場合は NGSI-v2 と互換性があり、個々のエンティティのコンテキスト・データを返します。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -545,8 +545,8 @@ Person:
 }  
 ```  
 </details>    
-#### Person NGSI-LD key-values Example      
-Here is an example of a Person in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.    
+#### 個人 NGSI-LD キー値の例    
+以下はPersonをJSON-LD形式でkey-valuesとした例である。これは NGSI-LD と互換性があり、`options=keyValues` を使用すると個々のエンティティのコンテキストデータを返す。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -594,8 +594,8 @@ Person:
 }  
 ```  
 </details>    
-#### Person NGSI-LD normalized Example      
-Here is an example of a Person in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.    
+#### 人物 NGSI-LD 正規化例    
+以下は、正規化された JSON-LD 形式の Person の例である。これは、オプションを使用しない場合は NGSI-LD と互換性があり、個々のエンティティのコンテキスト・データを返します。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -703,7 +703,7 @@ Person:
 <!-- 90-FooterNotes -->    
 <!-- /90-FooterNotes -->    
 <!-- 95-Units -->    
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units    
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。    
 <!-- /95-Units -->    
 <!-- 97-LastFooter -->    
 ---    

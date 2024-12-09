@@ -1,34 +1,34 @@
 <!-- 10-Header -->    
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
-Entity: Person    
-==============<!-- /10-Header -->    
+Entität: Person    
+===============<!-- /10-Header -->    
 <!-- 15-License -->    
-[Open License](https://github.com/smart-data-models//dataModel.Organization/blob/master/Person/LICENSE.md)    
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+[Offene Lizenz](https://github.com/smart-data-models//dataModel.Organization/blob/master/Person/LICENSE.md)    
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
 <!-- /15-License -->    
 <!-- 20-Description -->    
-Global description: **A person (alive, dead, undead, or fictional) mapped from schema.org**    
-version: 0.0.1    
+Globale Beschreibung: **Eine Person (lebend, tot, untot oder fiktiv), die von schema.org abgebildet wird**    
+Version: 0.0.1    
 <!-- /20-Description -->    
 <!-- 30-PropertiesList -->    
-## List of properties    
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>    
-- `additionalName[string]`: An additional name for a Person, can be used for a middle name  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government      
-	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
-	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
-	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `email[idn-email]`: Email address of owner  - `familyName[string]`: Family name. In the U.S., the last name of a Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `givenName[string]`: Given name. In the U.S., the first name of a Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `telephone[string]`: The telephone number  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: It must be equal to Person. NGSI type  <!-- /30-PropertiesList -->    
+## Liste der Eigenschaften    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.    
+- `additionalName[string]`: Ein zusätzlicher Name für eine Person, kann als zweiter Vorname verwendet werden  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.      
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `email[idn-email]`: E-Mail Adresse des Eigentümers  - `familyName[string]`: Familienname. In den Vereinigten Staaten ist der Nachname einer Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `givenName[string]`: Vornamen. In den Vereinigten Staaten ist der Vorname einer Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `telephone[string]`: Die Rufnummer  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Sie muss gleich der Person sein. NGSI-Typ  <!-- /30-PropertiesList -->    
 <!-- 35-RequiredProperties -->    
-Required properties    
+Erforderliche Eigenschaften    
 - `id`  - `type`  <!-- /35-RequiredProperties -->    
 <!-- 40-RequiredProperties -->    
 <!-- /40-RequiredProperties -->    
 <!-- 50-DataModelHeader -->    
-## Data Model description of properties    
-Sorted alphabetically (click for details)    
+## Datenmodell Beschreibung der Eigenschaften    
+Alphabetisch sortiert (für Details anklicken)    
 <!-- /50-DataModelHeader -->    
 <!-- 60-ModelYaml -->    
 <details><summary><strong>full yaml details</strong></summary>      
@@ -401,9 +401,9 @@ Person:
 <!-- 70-MiddleNotes -->    
 <!-- /70-MiddleNotes -->    
 <!-- 80-Examples -->    
-## Example payloads      
-#### Person NGSI-v2 key-values Example      
-Here is an example of a Person in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.    
+## Beispiel-Nutzlasten    
+#### Person NGSI-v2 Schlüsselwerte Beispiel    
+Hier ist ein Beispiel für eine Person im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -448,8 +448,8 @@ Person:
 }  
 ```  
 </details>    
-#### Person NGSI-v2 normalized Example      
-Here is an example of a Person in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.    
+#### Person NGSI-v2 normalisiert Beispiel    
+Hier ist ein Beispiel für eine Person im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -545,8 +545,8 @@ Person:
 }  
 ```  
 </details>    
-#### Person NGSI-LD key-values Example      
-Here is an example of a Person in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.    
+#### Person NGSI-LD Schlüsselwerte Beispiel    
+Hier ist ein Beispiel für eine Person im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -594,8 +594,8 @@ Person:
 }  
 ```  
 </details>    
-#### Person NGSI-LD normalized Example      
-Here is an example of a Person in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.    
+#### Person NGSI-LD normalisiert Beispiel    
+Hier ist ein Beispiel für eine Person im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -703,7 +703,7 @@ Person:
 <!-- 90-FooterNotes -->    
 <!-- /90-FooterNotes -->    
 <!-- 95-Units -->    
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units    
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht    
 <!-- /95-Units -->    
 <!-- 97-LastFooter -->    
 ---    

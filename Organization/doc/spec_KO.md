@@ -1,47 +1,45 @@
 <!-- 10-Header -->    
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
-Entity: Person    
-==============<!-- /10-Header -->    
+엔티티: 조직    
+=======<!-- /10-Header -->    
 <!-- 15-License -->    
-[Open License](https://github.com/smart-data-models//dataModel.Organization/blob/master/Person/LICENSE.md)    
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+[오픈 라이선스](https://github.com/smart-data-models//dataModel.Organization/blob/master/Organization/LICENSE.md)    
+[문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
 <!-- /15-License -->    
 <!-- 20-Description -->    
-Global description: **A person (alive, dead, undead, or fictional) mapped from schema.org**    
-version: 0.0.1    
+글로벌 설명: **학교, NGO, 기업, 동호회 등의 조직으로, schema.org에서 매핑**됨    
+버전: 0.0.3    
 <!-- /20-Description -->    
 <!-- 30-PropertiesList -->    
-## List of properties    
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>    
-- `additionalName[string]`: An additional name for a Person, can be used for a middle name  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government      
-	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
-	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
-	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `email[idn-email]`: Email address of owner  - `familyName[string]`: Family name. In the U.S., the last name of a Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `givenName[string]`: Given name. In the U.S., the first name of a Person  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `telephone[string]`: The telephone number  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: It must be equal to Person. NGSI type  <!-- /30-PropertiesList -->    
+## 속성 목록    
+<sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.    
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.      
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호      
+- `aggregateRating[object]`: 여러 평점 또는 리뷰를 기반으로 한 평균 평점입니다. 프라이버시:'낮음'  	- `itemReviewed[*]`: 검토/평가 중인 항목입니다.      
+	- `ratingCount`:       
+	- `reviewCount`:       
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `author[uri]`: 이 콘텐츠 또는 평점의 작성자입니다. 저자는 HTML 5에서 rel 태그를 통해 저자를 표시하는 특별한 메커니즘을 제공한다는 점에서 특별하다는 점에 유의하세요. 이는 다음과 동일하며 서로 바꿔서 사용할 수 있습니다.  . Model: [https://schema.org/URL](https://schema.org/URL)- `bestRating[number]`: 이 평점 시스템에서 허용되는 최고 값입니다. bestRating을 생략하면 5가 가정됩니다.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `legalName[string]`: 조직의 공식 이름(예: 등록된 회사명)  . Model: [https://schema.org/legalName](https://schema.org/legalName)- `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `reviewAspect[string]`: 이 리뷰 또는 평가는 항목의 이 부분 또는 측면과 관련이 있습니다.  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `taxID[string]`: 조직 또는 개인의 세금/재정 ID(예: 미국의 경우 TIN, 스페인의 경우 CIF/NIF)  . Model: [https://schema.org/taxID](https://schema.org/taxID)- `type[string]`: NGSI 엔티티 유형. 조직이어야 합니다.  - `url[uri]`: 이 항목에 대한 설명이나 추가 정보를 제공하는 URL입니다.  <!-- /30-PropertiesList -->    
 <!-- 35-RequiredProperties -->    
-Required properties    
+필수 속성    
 - `id`  - `type`  <!-- /35-RequiredProperties -->    
 <!-- 40-RequiredProperties -->    
 <!-- /40-RequiredProperties -->    
 <!-- 50-DataModelHeader -->    
-## Data Model description of properties    
-Sorted alphabetically (click for details)    
+## 속성에 대한 데이터 모델 설명    
+알파벳순으로 정렬(자세한 내용을 보려면 클릭)    
 <!-- /50-DataModelHeader -->    
 <!-- 60-ModelYaml -->    
 <details><summary><strong>full yaml details</strong></summary>      
 ```yaml    
-Person:      
-  description: 'A person (alive, dead, undead, or fictional) mapped from schema.org'      
+Organization:      
+  description: 'An organization such as a school, NGO, corporation, club, etc, mapped from schema.org'      
   properties:      
-    additionalName:      
-      description: 'An additional name for a Person, can be used for a middle name'      
-      type: string      
-      x-ngsi:      
-        model: https://schema.org/Text      
-        type: Property      
     address:      
       description: The mailing address      
       properties:      
@@ -95,6 +93,35 @@ Person:
       x-ngsi:      
         model: https://schema.org/address      
         type: Property      
+    aggregateRating:      
+      description: 'The average rating based on multiple ratings or reviews. Privacy:''low'''      
+      properties:      
+        itemReviewed:      
+          anyOf:      
+            - description: Identifier format of any NGSI entity      
+              maxLength: 256      
+              minLength: 1      
+              pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$      
+              type: string      
+              x-ngsi:      
+                type: Property      
+            - description: Identifier format of any NGSI entity      
+              format: uri      
+              type: string      
+              x-ngsi:      
+                type: Property      
+          description: 'The item that is being reviewed/rated. '      
+          x-ngsi:      
+            type: Relationship      
+        ratingCount:      
+          minimum: 0      
+          type: number      
+        reviewCount:      
+          minimum: 0      
+          type: number      
+      type: object      
+      x-ngsi:      
+        type: Property      
     alternateName:      
       description: An alternative name for this item      
       type: string      
@@ -105,6 +132,19 @@ Person:
       type: string      
       x-ngsi:      
         model: https://schema.org/Text      
+        type: Property      
+    author:      
+      description: The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably      
+      format: uri      
+      type: string      
+      x-ngsi:      
+        model: https://schema.org/URL      
+        type: Relationship      
+    bestRating:      
+      description: 'The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed. '      
+      type: number      
+      x-ngsi:      
+        model: https://schema.org/Number      
         type: Property      
     dataProvider:      
       description: A sequence of characters identifying the provider of the harmonised data entity      
@@ -128,24 +168,6 @@ Person:
       type: string      
       x-ngsi:      
         type: Property      
-    email:      
-      description: Email address of owner      
-      format: idn-email      
-      type: string      
-      x-ngsi:      
-        type: Property      
-    familyName:      
-      description: 'Family name. In the U.S., the last name of a Person'      
-      type: string      
-      x-ngsi:      
-        model: https://schema.org/Text      
-        type: Property      
-    givenName:      
-      description: 'Given name. In the U.S., the first name of a Person'      
-      type: string      
-      x-ngsi:      
-        model: https://schema.org/Text      
-        type: Property      
     id:      
       anyOf:      
         - description: Identifier format of any NGSI entity      
@@ -162,6 +184,12 @@ Person:
             type: Property      
       description: Unique identifier of the entity      
       x-ngsi:      
+        type: Property      
+    legalName:      
+      description: 'The official name of the organization, e.g. the registered company name'      
+      type: string      
+      x-ngsi:      
+        model: https://schema.org/legalName      
         type: Property      
     location:      
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'      
@@ -355,6 +383,12 @@ Person:
       type: array      
       x-ngsi:      
         type: Property      
+    reviewAspect:      
+      description: This Review or Rating is relevant to this part or facet of the itemReviewed      
+      type: string      
+      x-ngsi:      
+        model: https://schema.org/Text      
+        type: Property      
     seeAlso:      
       description: list of uri pointing to additional resources about the item      
       oneOf:      
@@ -372,16 +406,22 @@ Person:
       type: string      
       x-ngsi:      
         type: Property      
-    telephone:      
-      description: The telephone number      
+    taxID:      
+      description: 'The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain'      
       type: string      
       x-ngsi:      
-        model: https://schema.org/Text      
+        model: https://schema.org/taxID      
         type: Property      
     type:      
-      description: It must be equal to Person. NGSI type      
+      description: NGSI entity type. It has to be Organization      
       enum:      
-        - Person      
+        - Organization      
+      type: string      
+      x-ngsi:      
+        type: Property      
+    url:      
+      description: URL which provides a description or further information about this item      
+      format: uri      
       type: string      
       x-ngsi:      
         type: Property      
@@ -389,321 +429,201 @@ Person:
     - id      
     - type      
   type: object      
-  x-derived-from: https://schema.org/Person      
+  x-derived-from: https://schema.org/Organization      
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'      
-  x-license-url: https://github.com/smart-data-models/dataModel.Organization/blob/master/Person/LICENSE.md      
-  x-model-schema: https://smart-data-models.github.io/dataModel.Organization/Person/schema.json      
+  x-license-url: https://github.com/smart-data-models/dataModel.Organization/blob/master/Organization/LICENSE.md      
+  x-model-schema: https://smart-data-models.github.io/DataModel.Organization/Organization/schema.json      
   x-model-tags: ""      
-  x-version: 0.0.1      
+  x-version: 0.0.3      
 ```    
 </details>      
 <!-- /60-ModelYaml -->    
 <!-- 70-MiddleNotes -->    
 <!-- /70-MiddleNotes -->    
 <!-- 80-Examples -->    
-## Example payloads      
-#### Person NGSI-v2 key-values Example      
-Here is an example of a Person in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.    
+## 페이로드 예시    
+#### 조직 NGSI-v2 키 값 예제    
+다음은 키-값으로 JSON-LD 형식의 조직 예제입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
-  "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",  
-  "type": "Person",  
-  "dateCreated": "2022-05-07T06:43:37Z",  
-  "dateModified": "2022-12-27T04:25:34Z",  
-  "source": "",  
-  "name": "CEO",  
-  "alternateName": "",  
-  "description": "",  
-  "dataProvider": "",  
-  "owner": [  
-    "urn:ngsi-ld:dataModel:items:WQPT:65442393",  
-    "urn:ngsi-ld:dataModel:items:ALHV:33053523"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:dataModel:items:LHMU:67329694",  
-    "urn:ngsi-ld:dataModel:items:MMZQ:64123812"  
-  ],  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": "2022-06-21T08:24:35.905712+02:00",  
+  "dateModified": "2022-06-22T09:24:35.905712+02:00",  
+  "name": "Example Organization",  
   "location": {  
     "type": "Point",  
     "coordinates": [  
-      40.2403775,  
-      170.070362  
+      49.4,  
+      8.68  
     ]  
   },  
   "address": {  
-    "streetAddress": "Franklinstrasse 13A",  
-    "addressLocality": "Berlin",  
-    "addressRegion": "Berlin",  
-    "addressCountry": "Germany",  
-    "postalCode": "10587",  
-    "postOfficeBoxNumber": ""  
+    "addressLocality": "Heidelberg",  
+    "postalCode": "69115",  
+    "streetAddress": "Example-Street 42"  
   },  
-  "areaServed": "Worldwide",  
-  "additionalName": "",  
-  "familyName": "Ahle",  
-  "givenName": "Ulrich",  
-  "telephone": "+491741533348",  
-  "email": "info@fiware.org"  
+  "areaServed": "Stadt Heidelberg",  
+  "url": "https://www.example-organization-homepage.com",  
+  "legalName": "Beispielname GmbH",  
+  "taxID": "12345678900"  
 }  
 ```  
 </details>    
-#### Person NGSI-v2 normalized Example      
-Here is an example of a Person in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.    
+#### 조직 NGSI-v2 정규화 예제    
+다음은 정규화된 JSON-LD 형식의 조직 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
-  "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",  
-  "type": "Person",  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
   "dateCreated": {  
     "type": "DateTime",  
-    "value": "2022-05-07T06:43:37Z"  
+    "value": "2022-06-21T08:24:35.905712+02:00"  
   },  
   "dateModified": {  
     "type": "DateTime",  
-    "value": "2022-12-27T04:25:34Z"  
-  },  
-  "source": {  
-    "type": "Text",  
-    "value": ""  
+    "value": "2022-06-22T09:24:35.905712+02:00"  
   },  
   "name": {  
     "type": "Text",  
-    "value": "CEO"  
-  },  
-  "alternateName": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "dataProvider": {  
-    "type": "Text",  
-    "value": "Web"  
-  },  
-  "owner": {  
-    "type": "StructuredValue",  
-    "value": [  
-      "urn:ngsi-ld:dataModel:items:WQPT:65442393",  
-      "urn:ngsi-ld:dataModel:items:ALHV:33053523"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "StructuredValue",  
-    "value": [  
-      "urn:ngsi-ld:dataModel:items:LHMU:67329694",  
-      "urn:ngsi-ld:dataModel:items:MMZQ:64123812"  
-    ]  
+    "value": "Example Organization"  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
-        52.52,  
-        13.405  
+        49.4,  
+        8.68  
       ]  
     }  
   },  
   "address": {  
     "type": "StructuredValue",  
     "value": {  
-      "streetAddress": "Franklinstrasse 13A",  
-      "addressLocality": "Berlin",  
-      "addressRegion": "Berlin",  
-      "addressCountry": "Germany",  
-      "postalCode": "10587",  
-      "postOfficeBoxNumber": ""  
+      "addressLocality": "Heidelberg",  
+      "postalCode": "69115",  
+      "streetAddress": "Example-Street 42"  
     }  
   },  
   "areaServed": {  
     "type": "Text",  
-    "value": "Worldwide"  
+    "value": "Stadt Heidelberg"  
   },  
-  "additionalName": {  
+  "url": {  
     "type": "Text",  
-    "value": ""  
+    "value": "https://www.example-organization-homepage.com"  
   },  
-  "familyName": {  
+  "legalName": {  
     "type": "Text",  
-    "value": "Ahle"  
+    "value": "Beispielname GmbH"  
   },  
-  "givenName": {  
+  "taxID": {  
     "type": "Text",  
-    "value": "Ulrich"  
-  },  
-  "telephone": {  
-    "type": "Text",  
-    "value": "+491741533348"  
-  },  
-  "email": {  
-    "type": "Text",  
-    "value": "info@fiware.org"  
+    "value": "12345678900"  
   }  
 }  
 ```  
 </details>    
-#### Person NGSI-LD key-values Example      
-Here is an example of a Person in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.    
+#### 조직 NGSI-LD 키 값 예제    
+다음은 키-값으로 JSON-LD 형식의 조직 예제입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
-  "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",  
-  "type": "Person",  
-  "dateCreated": "2022-05-07T06:43:37Z",  
-  "dateModified": "2022-12-27T04:25:34Z",  
-  "source": "",  
-  "name": "CEO",  
-  "alternateName": "",  
-  "description": "",  
-  "dataProvider": "",  
-  "owner": [  
-    "urn:ngsi-ld:dataModel:items:WQPT:65442393",  
-    "urn:ngsi-ld:dataModel:items:ALHV:33053523"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:dataModel:items:LHMU:67329694",  
-    "urn:ngsi-ld:dataModel:items:MMZQ:64123812"  
-  ],  
+  "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+  "type": "Organization",  
+  "dateCreated": "2022-06-21T08:24:35.905712+02:00",  
+  "dateModified": "2022-06-22T09:24:35.905712+02:00",  
+  "name": "Example Organization",  
   "location": {  
     "type": "Point",  
     "coordinates": [  
-      40.2403775,  
-      170.070362  
+      49.4,  
+      8.68  
     ]  
   },  
   "address": {  
-    "streetAddress": "Franklinstrasse 13A",  
-    "addressLocality": "Berlin",  
-    "addressRegion": "Berlin",  
-    "addressCountry": "Germany",  
-    "postalCode": "10587",  
-    "postOfficeBoxNumber": ""  
+    "addressLocality": "Heidelberg",  
+    "postalCode": "69115",  
+    "streetAddress": "Example-Street 42"  
   },  
-  "areaServed": "Worldwide",  
-  "additionalName": "",  
-  "familyName": "Ahle",  
-  "givenName": "Ulrich",  
-  "telephone": "+491741533348",  
-  "email": "info@fiware.org",  
+  "areaServed": "Stadt Heidelberg",  
+  "url": "https://www.example-organization-homepage.com",  
+  "legalName": "Beispielname GmbH",  
+  "taxID": "12345678900",  
   "@context": [  
+    "https://smart-data-models.github.io/DataModel.Organization/context.jsonld",  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Organization/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>    
-#### Person NGSI-LD normalized Example      
-Here is an example of a Person in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.    
+#### 조직 NGSI-LD 정규화 예제    
+다음은 정규화된 JSON-LD 형식의 조직 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
-  "id": "urn:ngsi-ld:dataModel:id:UZHW:27495447",  
-  "type": "Person",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "date-time",  
-      "@value": "2022-05-07T06:43:37Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "date-time",  
-      "@value": "2022-12-27T04:25:34Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "CEO"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Web"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:dataModel:items:WQPT:65442393",  
-      "urn:ngsi-ld:dataModel:items:ALHV:33053523"  
+    "id": "urn:ngsi-ld:Organization:34f91f29-aadd-45f7-ab9e-4fca2baffdd7",  
+    "type": "Organization",  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": "2022-06-21T08:24:35.905712+02:00"  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": "2022-06-22T09:24:35.905712+02:00"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Example Organization"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                49.4,  
+                8.68  
+            ]  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressLocality": "Heidelberg",  
+            "postalCode": "69115",  
+            "streetAddress": "Example-Street 42"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Stadt Heidelberg"  
+    },  
+    "url": {  
+        "type": "Property",  
+        "value": "https://www.example-organization-homepage.com"  
+    },  
+    "legalName": {  
+        "type": "Property",  
+        "value": "Beispielname GmbH"  
+    },  
+    "taxID": {  
+        "type": "Property",  
+        "value": "12345678900"  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/DataModel.Organization/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Organization/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:dataModel:items:LHMU:67329694",  
-      "urn:ngsi-ld:dataModel:items:MMZQ:64123812"  
-    ]  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        52.52,  
-        13.4050  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Franklinstrasse 13A",  
-      "addressLocality": "Berlin",  
-      "addressRegion": "Berlin",  
-      "addressCountry": "Germany",  
-      "postalCode": "10587",  
-      "postOfficeBoxNumber": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Worldwide"  
-  },  
-  "additionalName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "familyName": {  
-    "type": "Property",  
-    "value": "Ahle"  
-  },  
-  "givenName": {  
-    "type": "Property",  
-    "value": "Ulrich"  
-  },  
-  "telephone": {  
-    "type": "Property",  
-    "value": "+491741533348"  
-  },  
-  "email": {  
-    "type": "Property",  
-    "value": "info@fiware.org"  
-  },  
-  "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Organization/master/context.jsonld"  
-  ]  
 }  
 ```  
 </details><!-- /80-Examples -->    
 <!-- 90-FooterNotes -->    
 <!-- /90-FooterNotes -->    
 <!-- 95-Units -->    
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units    
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.    
 <!-- /95-Units -->    
 <!-- 97-LastFooter -->    
 ---    

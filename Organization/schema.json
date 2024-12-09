@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.3",
   "$id": "https://smart-data-models.github.io/DataModel.Organization/Organization/schema.json",
   "title": " Smart Data Models - Organization",
@@ -58,7 +58,7 @@
         "author": {
           "type": "string",
           "format": "uri",
-          "description": "Relationship. Model:'https://schema.org/URL'. The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably."
+          "description": "Relationship. Model:'https://schema.org/URL'. The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably"
         },
         "bestRating": {
           "type": "number",
@@ -73,11 +73,11 @@
         },
         "legalName": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/legalName'. The official name of the organization, e.g. the registered company name."
+          "description": "Property. Model:'https://schema.org/legalName'. The official name of the organization, e.g. the registered company name"
         },
         "taxID": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/taxID'. The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain."
+          "description": "Property. Model:'https://schema.org/taxID'. The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain"
         }
       }
     }

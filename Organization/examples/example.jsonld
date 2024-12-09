@@ -20,7 +20,7 @@
     "url": "https://www.example-organization-homepage.com",
     "legalName": "Beispielname GmbH",
     "taxID": "12345678900",
-    "@context": [
+   "@context": [
         "https://smart-data-models.github.io/dataModel.Organization/context.jsonld"
     ]
 }
